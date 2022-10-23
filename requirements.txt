@@ -1,5 +1,4 @@
 
-datashape==0.5.4
 
 dj-database-url==1.0.0
 Django==4.1.2
