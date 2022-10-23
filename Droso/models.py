@@ -1,6 +1,4 @@
 from django.db import models
-import cv2
-
 
 class w_dimen(models.Model):
     wdimen = models.AutoField(primary_key=True)
