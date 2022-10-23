@@ -12,7 +12,7 @@ blinker==1.5
 
 brotlipy==0.7.0
 
-clyent==1.2.2
+clyent==1.2.1
 commonmark==0.9.1
 comtypes==1.1.10
 
