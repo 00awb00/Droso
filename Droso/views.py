@@ -14,7 +14,7 @@ def logoutUser(request):
     # LOGOUT USER
     logout(request)
 
-    return render(request, 'user/logout.html')
+    return render(request, 'index.html', {'head': 'Drosometer | DOW-UIT'})
 
 
 def __find_userpath(request):
@@ -121,8 +121,8 @@ def eye_f(request):
     return render(request, 'f_e.html', {'head': 'Drosometer | Eyes'})
 
 
-def thorax_f(request):
-    return render(request, 'f_t.html', {'head': 'Drosometer | Thorax'})
+# def thorax_f(request):
+#     return render(request, 'f_t.html', {'head': 'Drosometer | Thorax'})
 
 
 def w_option(request):
