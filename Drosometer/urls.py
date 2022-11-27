@@ -38,7 +38,6 @@ urlpatterns = [
     path('login', views.loginUser),
     path('logout', views.logoutUser),
     path('opt', views.w_option),
-    path('f_thorax', views.thorax_f),
 ]
 
 
