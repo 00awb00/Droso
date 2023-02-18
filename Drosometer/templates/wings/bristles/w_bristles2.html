@@ -1,0 +1,71 @@
+{% extends "base/head.html" %}
+{% block content %}
+
+<div id="wrapper">
+
+    <section class="simple-post">
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Perfect Image</h2>
+                    <p>A perfect and noiseless image always generate the better and accurate results.</p>
+                    <section class="forms">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="section-heading">
+                                        <h2>Upload Image</h2>
+                                    </div>
+
+                                    <form id="contact" action="" method="post"
+                                          enctype="multipart/form-data">
+                                        {% csrf_token %}
+                                        <div class="row">
+
+ 
+
+                                            <div class="col-md-12">
+                                                <fieldset>
+                                                    {% csrf_token %}
+
+                                                    <label for="img">Select image:</label>
+                                                    <input type="file" id="img" name="img" accept="image/*"
+                                                           style="padding-top: 25px; padding-bottom: 75px">
+                                                </fieldset>
+                                            </div>
+ 
+
+                                            <div class="col-md-12"><br>
+                                                <br>
+                                                <br>
+
+                                                <div class="filled-radius-button">
+                                                    <a href="/w_bristles3">Proceed</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br><br>
+
+                </div>
+                <div class="col-md-6">
+                    <h2>{{img_name}}</h2>
+                    <p><img src="{{img_path}}" alt=""></p>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+</div>
+
+
+{% endblock %}

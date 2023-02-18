@@ -1,0 +1,75 @@
+ {% extends "base/head.html" %}
+{% block content %}
+
+ 
+<div class="page-heading">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Uploaded Image</h1>
+                <img src="static/images/new/dimen_1.png" style="height: 70%; width: 70%;">
+            </div>
+        </div>
+    </div>
+</div>
+ <div class="page-heading">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>One more thing...</h1>
+                <img src="static/images/new/dimen-2.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+  
+
+<div class="page-heading">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>One more thing...</h1>
+                <p>We have detected that the wing is placed in the <strong> center </strong> without touching any
+                    borders or frames of the
+                    image. <br>Is that true?</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Forms -->
+<section class="forms">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <form id="contact" action="" method="post">
+                    <div class="col-md-8">
+                        <div class="circle-item">
+                            <input name="demo-priority" type="radio" id="demo-small" checked>
+                            <label for="demo-small">Yes
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="circle-item">
+                            <input name="demo-priority" type="radio" id="demo-medium">
+                            <label for="demo-medium">No
+                            </label>
+                        </div>
+ 
+                        <div class="col-md-12">
+                            <div class="filled-radius-button">
+                            <!-- ###<button type="submit" id="form-submit" class="button">Done</button>-->
+                            <a href="/w_dimen4">Upload & Next <span
+                                class="load loading"></span></a>
+                                </div>
+                        </div>
+ 
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
